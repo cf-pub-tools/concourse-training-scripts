@@ -81,17 +81,17 @@ After this exercise, the goal is for you to be able to:
 
     A. Triggering Jobs when Resources get Updated
         
-        * As of version 0.51.0, Concourse does NOT automatically trigger builds when a Resource is updated
-        * This means, when you want a Job to kick off when a Resource is updated, we will add a specific key to its `job:`
+      * As of version 0.51.0, Concourse does NOT automatically trigger builds when a Resource is updated
+      * This means, when you want a Job to kick off when a Resource is updated, we will add a specific key to its `job:`
 
-        ```
-        jobs:
-          - name: staging
-            plan: 
-              - get: book
-                trigger: true
-            ...
-        ```
+    ```
+    jobs:
+      - name: staging
+        plan: 
+          - get: book
+            trigger: true
+        ...
+    ```
 
     B. Triggering Jobs when a Job finishes
 
