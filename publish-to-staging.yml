@@ -1,0 +1,10 @@
+---
+platform: linux
+
+image: docker:///pubtools/docs-docker-with-dita-ot#latest
+
+inputs:
+  # fill me in!
+
+run:
+  path: # fill me in!

@@ -1,0 +1,28 @@
+resources:
+  - name: small-book
+    type: git
+    source:
+      uri: git@github.com:cf-pub-tools/small-book.git
+      branch: master
+      private_key: {{private-key}}
+
+  - name: tiny-section
+    # fill me in!
+
+  - name: credentials
+    # fill me in!
+
+jobs:
+  - name: staging
+    plan:
+    # fill in resources
+    - task: # fill in task name
+      file: # fill in task.yml
+
+  - name: production
+    # fill in if extra time
+
+groups:
+  - name: <your-team-name>
+    jobs:
+    # fill me in!
